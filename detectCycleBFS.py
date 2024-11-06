@@ -18,5 +18,5 @@ def detectCycle(arr):
             if detect(i,visited,arr):
                 return True
     return False
-adj = [[], [2], [1,3], [2]]
+adj = [[], [2,3], [1,3], [2,1]]
 print(detectCycle(adj))
