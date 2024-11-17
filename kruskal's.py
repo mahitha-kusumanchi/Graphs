@@ -1,8 +1,8 @@
 class disJoinSet:
     def __init__(self,V):
-        self.parent=[i for i in range(V+1)]
-        self.size=[0]*(V+1)
-        self.rank=[0]*(V+1)
+        self.parent=[i for i in range(V)]
+        self.size=[0]*(V)
+        self.rank=[0]*(V)
     def find(self,u):
         if self.parent[u]==u:
             return u
